@@ -9,7 +9,7 @@ permalink: /members/
 <table>
 {% for member in site.data.members %}
 
-    {% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
+    {% capture modulo %}{{ forloop.index | modulo: 2 }}{% endcapture %}
     {% if modulo == '1' %}
       <tr>
     {% endif %}
@@ -22,7 +22,9 @@ permalink: /members/
       <strong>{{ member.name }}</strong>
       <p class="post-meta">{{ member.interests }}</p>
       {{ member.institute }}<br>
-      {{ member.email }}<br>
+      {% if member.email %}
+        {{ member.email }}<br>
+      {% endif %}
       {% if member.twitter %}
         <a href="{{member.website}}">web</a> | <a href="https://twitter.com/{{member.twitter}}">twitter</a>
       {% else %}
