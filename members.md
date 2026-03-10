@@ -45,7 +45,11 @@ Please add yourself to this page! Either [sign up here](../member_registration.h
       <p class="post-meta">{{ member.interests }}</p>
       {{ member.institute }}<br>
       {{ member.email }}<br>
-      <a href="{{member.website}}">web</a> | <a href="https://twitter.com/{{member.twitter}}">twitter</a>
+      {% if member.twitter %}
+        <a href="{{member.website}}">web</a> | <a href="https://twitter.com/{{member.twitter}}">twitter</a>
+      {% else %}
+        <a href="{{member.website}}">web</a>
+      {% endif %}
     </td>
     {% if modulo == '0' or forloop.last %}
       </tr>
