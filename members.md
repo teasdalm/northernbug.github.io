@@ -4,29 +4,7 @@ title: Members
 permalink: /members/
 ---
 
-Please add yourself to this page! Either [sign up here](../member_registration.html), or fork the repository, edit `_data/members.yml` and submit a pull request.
-
 ## Steering Committee
-
-- Peter Ashton, University of York
-- Jarek Bryk, University of Huddersfield
-- Mark Dunning, 
-- Dave Lunt, University of Hull
-- Andrew Mason, University of York
-- Krzysztof Poterlowicz, University of Bradford
-- Xènia Pérez Sitjà, University of Bradford
-- Lucy Stead, University of Leeds
-- Emily Johnson, University of Liverpool
-- Jamie Soul, University of Liverpool
-- Eva Caamano Gutierrez, University of Liverpool
-- Matthew Gemmell, University of Liverpool/NEOF
-
-### PGR members of the Steering Committee
-
-- Jess Buddle, University of Sheffield
-- Deepthi Paidipati, University of Bradford
-
-## Current Members
 
 <table>
 {% for member in site.data.members %}
@@ -56,6 +34,16 @@ Please add yourself to this page! Either [sign up here](../member_registration.h
       {% endif %}
 {% endfor %}
 </table>
+
+- Jess Buddle, University of Sheffield
+- Alastair Droop, University of York
+- Helen Hipperson, University of Sheffield
+- Emily Johnson, University of Liverpool
+- Khaled Jumah, University of Bradford
+- Andrew Mason, University of York
+- Freddie Mercer, Univeristy of Leeds
+- Rachel Queen, Univeristy of Newcastle
+- Jamie Soul, University of Liverpool
 
 <!---
 To Add yourself to the members table:
